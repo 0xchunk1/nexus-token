@@ -124,32 +124,7 @@ BNB forwarded to treasury (contract holds zero)
 
 ---
 
-## 🚀 Quick Start
 
-```bash
-# Clone
-git clone https://github.com/0xchapo/nexus-token.git
-cd nexus-token
-
-# Install dependencies
-forge install
-
-# Build
-forge build
-
-# Deploy (requires BSC_RPC_URL and private key)
-forge script script/Deploy.sol:NexusDeploy --rpc-url bsc --broadcast
-
-# Verify
-forge verify-contract \
-  --chain 56 \
-  --verifier etherscan \
-  --etherscan-api-key $BSCSCAN_API_KEY \
-  --compiler-version v0.8.35+commit.47b9dedd \
-  --optimizer-runs 200 \
-  0xc9E7419fAa4d9311AF95de9Dac943B9252A79531 \
-  src/NexusToken.sol:NexusToken
-```
 
 ---
 
